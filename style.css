@@ -10,12 +10,11 @@ header{
     background-color: #553B4B;
 
 }
-
 h1{
     position: absolute;
     padding: 3px;
     float: left;
-    margin-left: 2%;
+    margin-left: 21%;
     margin-top: 10px;
     font-family: 'Alfa Slab One',cursive;
     color: #ABA3B3;
@@ -23,6 +22,14 @@ h1{
 
 span{
     color: #FBD7DC;
+}
+
+.navbar {
+
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 ul{
@@ -135,17 +142,122 @@ a:hover{
 
 
 }
-
-h2{
-    font-size: 70px;
-    color:#8a0755;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-.active{
+.active {
     color: #553B4B;
     background-color: #FBD7DC;
     border-radius: 100px;
     padding: 10px;
+}
+
+.bubbletext {
+
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    width: 70%;
+    background:#FBD7DC;
+    border-radius: 50px;
+    padding: 24px;
+    text-align: center;
+    color: black;
+    margin-top: 10%;
+    margin-left: 25%;
+
+}
+img.pic {
+
+    width: 500px;
+    height: 400px;
+    margin-top: 3%;
+    margin-left: 55%;
+}
+/* Side bar */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #ABA3B3;
+    transition: all .5s ease;
+}
+
+.sidebar h3 {
+     font-size: 22px;
+     color: #44445F;
+     text-align: center;
+     line-height: 70px;
+     background: #c2bac9;
+     user-select: none;
+}
+
+.sidebar .side a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: #44445F;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(147, 138, 156, 0.644);
+    transition: .4s;
+}
+
+.side li:hover a {
+    padding-left: 50px;
+}
+
+.sidebar .side a i {
+    padding-left: 50px;
+}
+
+#check {
+    display: none;
+}
+
+label #btn,label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #dcdcee;
+    border-radius: 3px;
+}
+label #btn {
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: #d8c0cf;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel {
+    z-index: 1111;
+    left: -195px;
+    top: 17px;
+    font-size: 30px;
+    color: #d8c0cf;
+    padding: 4px 9px;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar {
+    left: 0;
+
+}
+
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel {
+    left: 195px;
 }
