@@ -4,20 +4,27 @@ html{
     padding: 0;
 }
 
+body {
+
+    background-color: #e1e8fcd0;
+}
+/* Nav bar */
 header{
     width: 100%;
     height: 70px;
     background-color: #553B4B;
 
 }
-h1{
+/* Paolina Ganeva */
+.port {
     position: absolute;
     padding: 3px;
     float: left;
-    margin-left: 21%;
-    margin-top: 10px;
+    margin-left: 0%;
+    margin-top: 8px;
     font-family: 'Alfa Slab One',cursive;
-    color: #ABA3B3;
+    color: #bdb4c7;
+    font-size: 30px;
 }
 
 span{
@@ -56,22 +63,29 @@ a:hover{
     color:#B24F5D;
     transition: 0,5s;
 }
+/* End of Nav bar */
+/* Facts about me*/
 
+.circle{
+    width: 400px;
+    height: 400px;
+    background-color: #fafc5d;
+    margin-top: 20%;
+    margin-left: 40%;
+    border-radius: 50%;
+}
 .circle1{
 
     width: 350px;
     height: 350px;
     background-color: #FBD7DC;
-    margin: -15% auto;
+    margin-top: 4%;
     border-radius: 50%;
-    position: inherit;
+    
 }
-
 .fact1{
 
-   position: absolute;
-   width: inherit;
-   height: auto;
+   position: inherit;
    top: 650%;
    transform: translateY(50%);
    text-align: center;
@@ -142,13 +156,16 @@ a:hover{
 
 
 }
+
 .active {
     color: #553B4B;
     background-color: #FBD7DC;
     border-radius: 100px;
+    border-color: #181213;
+    border-style: solid;
     padding: 10px;
 }
-
+/* Bubble text */
 .bubbletext {
 
     font-family: sans-serif;
@@ -161,8 +178,11 @@ a:hover{
     text-align: center;
     color: black;
     margin-top: 10%;
-    margin-left: 25%;
-
+    margin-left: 23%;
+    border-color: #c2a3a7;
+    border-style: outset;
+    
+/* End of bubble */
 }
 img.pic {
 
@@ -170,6 +190,9 @@ img.pic {
     height: 400px;
     margin-top: 3%;
     margin-left: 55%;
+    border-color: #B24F5D;
+    border-style: outset;
+    border-width: medium;
 }
 /* Side bar */
 
@@ -189,22 +212,23 @@ img.pic {
 }
 
 .sidebar h3 {
-     font-size: 22px;
-     color: #44445F;
+     font-size: 25px;
+     color: #553B4B;
      text-align: center;
      line-height: 70px;
      background: #c2bac9;
      user-select: none;
+     font-family: monospace;
 }
 
 .sidebar .side a {
     display: block;
     height: 100%;
     width: 100%;
-    line-height: 65px;
+    line-height: 45px;
     font-size: 20px;
     color: #44445F;
-    padding-left: 40px;
+    padding-left: 10px;
     box-sizing: border-box;
     border-bottom: 2px solid rgba(147, 138, 156, 0.644);
     transition: .4s;
@@ -231,9 +255,9 @@ label #btn,label #cancel {
 label #btn {
     left: 40px;
     top: 25px;
-    font-size: 35px;
+    font-size: 25px;
     color: #d8c0cf;
-    padding: 6px 12px;
+    padding: 6px 12px 12px 12px;
     transition: all .5s;
 }
 
@@ -260,4 +284,101 @@ label #cancel {
 
 #check:checked ~ label #cancel {
     left: 195px;
+}
+
+#check:checked ~ .port, h1{
+    margin-left: 250px;
+}
+ /* end of side bar */
+ /* social media */
+.social {
+    color: #553B4B;
+    font-size: 27px;
+    margin-right: 55%;
+    margin-top: -28%;
+    left: 10%;
+    z-index: -1;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+/* social media */
+.pic1 {
+    width: 550px;
+    height: 420px;
+    margin-top: -3px;
+    margin-left: 115px;
+    border-color: #ABA3B3;
+    border-style: outset;
+    border-width: medium;
+}
+
+}
+/*Second bubble*/
+#bubbletext {
+
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 22px;
+    width: 30%;
+    background:#FBD7DC;
+    border-radius: 50px;
+    padding: 24px;
+    text-align: center;
+    color: black;
+    margin-top: -30%;
+    margin-left: 61%;
+    border-color: #c2a3a7;
+    border-style: outset;
+}
+/*End of second bubble*/
+
+.hz {
+    width: 250px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 40%;
+}
+/*Icons*/
+
+.instagram {
+    width: 30px;
+    height: 30px;
+}
+
+.facebook {
+     width: 30px;
+     height: 30px;
+}
+
+.linkedin {
+
+    width: 30px;
+    height: 30px;
+}
+ 
+.pic3 {
+    width: 550px;
+    height: 420px;
+    margin-top: 1%;
+    margin-left: 27%;
+    border-color: #ABA3B3;
+    border-style: outset;
+    border-width: medium;
+}
+
+.port1 {
+    margin-left: 70px;
+    margin-top: 20px;
+    font-family: 'Alfa Slab One',cursive;
+    color: #362929;
+    font-size: 40px;
+    border-width: small;
+    border-color: #553B4B;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #b89292;
+    padding: 0px 5px 0px 5px;
+
+   
 }
