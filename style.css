@@ -64,99 +64,7 @@ a:hover{
     transition: 0,5s;
 }
 /* End of Nav bar */
-/* Facts about me*/
-
-.circle{
-    width: 400px;
-    height: 400px;
-    background-color: #fafc5d;
-    margin-top: 20%;
-    margin-left: 40%;
-    border-radius: 50%;
-}
-.circle1{
-
-    width: 350px;
-    height: 350px;
-    background-color: #FBD7DC;
-    margin-top: 4%;
-    border-radius: 50%;
-    
-}
-.fact1{
-
-   position: inherit;
-   top: 650%;
-   transform: translateY(50%);
-   text-align: center;
-   font-family: Arial;
-   color: #000000;
-   font-style: italic;
-   text-transform: capitalize;
-}
-
-.circle2{
-
-    width: 350px;
-    height: 350px;
-    background-color: #FBD7DC;
-    margin: -82% auto;
-    border-radius: 50%;
-    position: inherit;
-}
-
-.fact2{
-
-    position: absolute;
-    width: inherit;
-    height: auto;
-    top: 540%;
-    transform: translateY(50%);
-    text-align: center;
-    font-family: Arial;
-    color: #000000;
-    font-style: italic;
-    text-transform: capitalize;
-}
-
-.circle3{
-
-    width: 350px;
-    height: 350px;
-    background-color: #FBD7DC;
-    margin: auto;
-    float: right;
-    border-radius: 50%;
-    position: inherit;
-}
-
-.fact3{
-
-    position: absolute;
-}
-
-.circle4{
-
-    width: auto;
-    height:auto;
-
-}
-
-.fact4{
-
-    position: relative;
-}   
-
-.circle5{
-
-
-}
-
-.fact5{
-
-
-}
-
+/* active bubble for the nav bar */
 .active {
     color: #553B4B;
     background-color: #FBD7DC;
@@ -313,7 +221,7 @@ label #cancel {
     border-width: medium;
 }
 
-}
+
 /*Second bubble*/
 #bubbletext {
 
@@ -335,7 +243,7 @@ label #cancel {
 
 .hz {
     width: 250px;
-    height: 50px;
+    height: 60px;
     margin-top: 40px;
     margin-left: 40%;
 }
@@ -357,11 +265,13 @@ label #cancel {
     height: 30px;
 }
  
+/* profile page */
 .pic3 {
     width: 550px;
     height: 420px;
     margin-top: 1%;
     margin-left: 27%;
+ 
     border-color: #ABA3B3;
     border-style: outset;
     border-width: medium;
@@ -382,3 +292,158 @@ label #cancel {
 
    
 }
+
+#yellow {
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    top: 145%;
+    left: 36%;
+    border-color: #e2d302f3;
+    border-width: small;
+    border-style: solid;
+    border-radius: 50%;
+    z-index: 3;
+
+}
+
+.cr1 {
+    position: absolute;
+    top: 100%;
+    left: 37%;
+    width: 26%;
+    height: 52%;
+    border-color: #d49da4;
+    border-width: small;
+    border-style: solid;
+    border-radius: 50%;
+    
+}
+
+.cr2 {
+    position: absolute;
+    top: 135%;
+    left: 18%;
+    width: 26%;
+    height: 52%;
+    border-color: #d49da4;
+    border-width: small;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.cr3 {
+    position: absolute;
+    top: 130%;
+    right: 16%;
+    width: 26%;
+    height: 52%;
+    border-color: #d49da4;
+    border-width: small;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.cr4 {
+    position: absolute;
+    top: 180%;
+    right: 22%;
+    width: 26%;
+    height: 52%;
+    border-color: #d49da4;
+    border-width: small;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+.cr5 {
+    position: absolute;
+    top: 185%;
+    left: 26%;
+    width: 26%;
+    height: 52%;
+    border-color: #d49da4;
+    border-width: small;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+h4 {
+    font-size: 45px;
+    font-family: fantasy;
+    position: absolute;
+    top: 170%;
+    left: 40%;
+    z-index: 4;
+    color: #863c46;
+}
+
+h5 {
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 123%;
+    left: 42%;
+    z-index: 4;
+    color: #863c46;
+}
+
+.f2 {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 150%;
+    left: 63%;
+    z-index: 4;
+    color: #863c46;
+}
+
+.f3 {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 205%;
+    left: 56%;
+    z-index: 4;
+    color: #863c46;
+}
+
+.f4 {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 207%;
+    left: 35%;
+    z-index: 4;
+    color: #863c46;
+}
+
+.f5 {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 155%;
+    left: 20%;
+    z-index: 4;
+    color: #863c46;
+}
+
+.confeti {
+
+    background-image: url("confeti.png");
+    
+}
+
+/* Dashboard */
+
+#name {
+    position: absolute;
+    left: 5%;
+    padding: 3px;
+    float: left;
+    margin-top: 8px;
+    font-family: 'Alfa Slab One',cursive;
+    color: #bdb4c7;
+    font-size: 30px;
+}
+
