@@ -6,15 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Dashboard</title>
+    <meta name="description" content="Charts">
     <style>
 
       table, th, td {
-          border: 1px solid black;
+          border: 3px solid #634657;
+          border-collapse: collapse;
         
+      }
+
+      th {
+        background-color: #ABA3B3;
+        padding: 10px 10px 10px 10px;
+        color: #31222b;
+        
+      }
+
+      table {
+        margin-top: 10%;
+        margin-left: 5%;
+      }
+
+      .num {
+        text-align: center;
+        background-color: #b1969a;
+      }
+
+      td {
+        padding: 5px 5px 5px 5px;
+      }
+
+      .list {
+         list-style: none;
+         position: absolute;
+         left: 55%;
+         top: 15%;
+         font-size: large;
+         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+
+      progress{
+        width: 350px;
+        height: 40px;
+        margin-top: 10%;
       }
     </style>
     </head>
-    <header>
+    <header class="navbar">
         <h1 id="name">Paolina Ganeva</h1>
         <nav>
           <ul>
@@ -38,7 +76,7 @@
              </thead>
              <tbody>
              <tr class="solid">
-               <td rowspan="3">1</td>
+               <td rowspan="3" class="num">1</td>
                <td>Programm and Career Orientation </td>
                <td>2,5</td>
                <td>Assassment</td>
@@ -57,7 +95,7 @@
                <td></td>
              </tr>
              <tr class="solid">
-              <td rowspan="2">2</td>
+              <td rowspan="2" class="num">2</td>
               <td rowspan="2">Object Oriented Programming</td>
               <td rowspan="2">10</td>
               <td>Case study</td>
@@ -68,7 +106,7 @@
                <td></td>
              </tr>
              <tr class="solid">
-              <td rowspan="4">3</td>
+              <td rowspan="4" class="num">3</td>
               <td>Framework Development 1</td>
               <td>5</td>
               <td>Case study</td>
@@ -90,7 +128,7 @@
                <td></td>
              </tr>
              <tr>
-               <td rowspan="3">4</td>
+               <td rowspan="3" class="num">4</td>
                <td rowspan="3">Framework Project 2</td>
                <td rowspan="3">10</td>
                <td>Portfolio</td>
@@ -105,28 +143,30 @@
                <td></td>
              </tr>
              <tr>
-               <td>The Entire Year</td>
+               <td class="num">The Entire Year</td>
                <td>PersonalProfessional Development</td>
                <td>12,5</td>
                <td>Portfolio</td>
                <td></td>
              </tr>
              <tr>
-               <td>Whenever</td>
+               <td class="num">Whenever</td>
                <td>Personality 1</td>
                <td>2,5</td>
                <td>Report</td>
                <td></td>
              </tr>
-             <tr>
-               <td>NBSA</td>
-               <td></td>
-               <td></td>
-               <td></td>
-               <td></td>
-             </tr>
               </tbody>
            </table>
-           
+           <ul class="list">
+             <li style="color: green;">Green: Done</li>
+             <li style="color: yellow;">Yellow: In Process</li>
+             <li style="color: red;">Red: Not Done</li>
+           </ul>
+           <div class="piechart"></div>
+           <label id="bar" for="credits">Number of Credits:</label>
+           <progress id="credits" value="0" max="60"></progress>
+           <label id="bar" for="credits">NBSA:</label>
+           <progress id="credits" value="45" max="60"></progress>
        </body>
 </html>

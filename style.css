@@ -37,6 +37,7 @@ span{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 4;
 }
 
 ul{
@@ -446,4 +447,17 @@ h5 {
     color: #bdb4c7;
     font-size: 30px;
 }
+
+.piechart {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: conic-gradient(red 6deg, orange 6deg 12deg, yellow 12deg 18deg, 
+    green 18deg 24deg, blue 24deg 30deg, purple 30deg 36deg, pink 36deg 42deg, #800020 42deg, #42f5ef 42deg 48deg, #cbf542 48deg 54deg, black 54deg);
+}
+
 
