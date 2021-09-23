@@ -267,6 +267,8 @@ label #cancel {
 }
  
 /* profile page */
+
+/* Me img */
 .pic3 {
     width: 550px;
     height: 420px;
@@ -277,7 +279,7 @@ label #cancel {
     border-style: outset;
     border-width: medium;
 }
-
+/* Paolina Ganeva button */
 .port1 {
     margin-left: 70px;
     margin-top: 20px;
@@ -293,7 +295,7 @@ label #cancel {
 
    
 }
-
+/* circles */
 #yellow {
     width: 30%;
     height: 60%;
@@ -368,7 +370,7 @@ label #cancel {
     border-style: solid;
     border-radius: 50%;
 }
-
+/* Facts about me text */
 h4 {
     font-size: 45px;
     font-family: fantasy;
