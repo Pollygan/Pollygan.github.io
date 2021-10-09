@@ -265,7 +265,9 @@ label #cancel {
     width: 30px;
     height: 30px;
 }
- 
+ .hz {
+     margin: 30px;
+ }
 /* profile page */
 
 /* Me img */
