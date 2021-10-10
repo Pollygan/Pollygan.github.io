@@ -6,98 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FAQ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="FAQ">
-    <style>
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
-    color: #44445F;
-}
-
- body {
-    overflow: scroll;
-}
-
-.wrapper {
-    max-width: 800px;
-    width: 100%;
-    margin: 10vh auto;
-    margin-top: 10%;
-    margin-left: 15%;
-}
-
-h6 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-input {
-    display: none;
-}
-
-label {
-    display: flex;
-    width: 114%;
-    height: 50px;
-    cursor: pointer;
-    border: 3px solid #44445F;
-    background-color: #ffeff1;
-    user-select: none;
-}
-
-label div:first-child {
-    width: 100%;
-    line-height: 45px;
-    margin-left: 10px;
-    font-size: 1.2em;
-}
-
-.cross {
-    margin-right: 15px;
-    margin-top: 3px;
-}
-
-.cross::before,.cross:after {
-    content: '';
-    border-top: 2px solid #44445F;
-    width: 15px;
-    display: block;
-    margin-top: 18px;
-    transition: 0.3s;
-}
-
-.cross:after {
-    transform: rotate(90deg);
-    margin-top: -2px;
-}
-
-.content {
-    box-sizing: border-box;
-    font-size: 0.9em;
-    margin: 10px 10px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height, .5s;
-}
-
-input:checked ~ .content {
-    max-height: 400px;
-    transition: max-height, 1s;
-}
-
-input:checked ~ label .cross:before {
-    transform: rotate(180deg);
-}
-
-input:checked ~ label .cross:after {
-    transform: rotate(0deg);
-}
-    </style>
+    <link rel="stylesheet" href="..\css\faq.css">
     </head>
+
+    <body>
+
     <header class="navbar">
         <h1 id="name">Paolina Ganeva</h1>
         <nav>
@@ -109,7 +22,8 @@ input:checked ~ label .cross:after {
           </ul>
         </nav>
        </header>
-       <body>
+      
+       <main>
         <div class="wrapper">
           <h6>FAQ</h6>
 
@@ -144,6 +58,7 @@ input:checked ~ label .cross:after {
               <div class="content">Free parking is possible on the car park of PZEM at the Poelendaelesingel 10 in Middelburg. Students and staff can only enter by presenting their HZ pass at the barriers, guests can ring the bell at the barrier. After passing the barrier, follow the signs to the HZ parking places, marked with a white sign with the HZ logo.</div>
             </div>
           </div>
-          <img src="hz.png" alt="Hz logo" class="hz">
+        </main>
+
         </body>
 </html>
